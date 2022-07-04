@@ -31,12 +31,12 @@ class Artist {
 
 
     }
-    playSong(index) {
+    playSong(songIndex) {
 
         //console.log('A',this.songs[index]);
-        this.songs[index].playCount++;  //pagrojam daina kuri stovi index vietoj masyve ir su playAccount paskaiciuojam kiek kartu pagrota
+        this.songs[songIndex].playCount++;  //pagrojam daina kuri stovi index vietoj masyve ir su playAccount paskaiciuojam kiek kartu pagrota
         this.balance += this.price;
-        return `Playing song: ${this.songs[index].name}.`;
+        return `Playing song: ${this.songs[songIndex].name}.`;
     }
     fortune() {
         return `Total lifetime wealth of ${this.name} is ${this.balance.toFixed(2)} ${this.currency} right now!`
